@@ -40,4 +40,6 @@ Vagrant.configure(2) do |config|
   config.vm.provision :ansible do |ansible|
     ansible.playbook = "ansible/vagrant.yml"
   end
+
+  config.vm.synced_folder "skit/", "/Users/alvaro/apsl/tools/django/LaunchKit"
 end
